@@ -26,7 +26,7 @@ ENV PYTHON_PIP_VERSION 9.0.*
 ENV REQUESTS_VERSION 0.4.7
 ENV ROBOT_FRAMEWORK_VERSION 3.0.4
 ENV SELENIUM_LIBRARY_VERSION 3.2.0
-ENV SELENIUM_2_LIBRARY_VERSION 3.0.0
+ENV SELENIUM_2_LIBRARY_VERSION 1.8.0
 ENV EXTENDED_SELENIUM_2_LIBRARY_VERSION 0.9.2
 ENV XVFB_VERSION 1.19.*
 
@@ -51,7 +51,7 @@ RUN pip install \
   robotframework-requests==$REQUESTS_VERSION \
   robotframework-seleniumlibrary==$SELENIUM_LIBRARY_VERSION \
   robotframework-selenium2library==$SELENIUM_2_LIBRARY_VERSION \
-  robotframework-extendedselenium2library==$EXTENDED_SELENIUM_2_LIBRARY_VERSION \
+  robotframework-extendedselenium2library==$EXTENDED_SELENIUM_2_LIBRARY_VERSION
 
 # Download Gecko drivers directly from the GitHub repository
 RUN wget -q "https://github.com/mozilla/geckodriver/releases/download/$GECKO_DRIVER_VERSION/geckodriver-$GECKO_DRIVER_VERSION-linux64.tar.gz" \
