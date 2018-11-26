@@ -41,6 +41,7 @@ RUN dnf upgrade -y \
     xorg-x11-server-Xvfb-$XVFB_VERSION \
     which \
     wget \
+    git \
   && dnf clean all
 
 # Install Robot Framework and Selenium Library
